@@ -113,6 +113,7 @@ def create_dataloader(path,
                       min_items=0,
                       prefix='',
                       shuffle=False):
+    print(f"{augment=}, {close_mosaic=}")
     if rect and shuffle:
         LOGGER.warning('WARNING ⚠️ --rect is incompatible with DataLoader shuffle, setting shuffle=False')
         shuffle = False

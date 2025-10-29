@@ -1,0 +1,5 @@
+train: ..\images\train 
+val: ..\images\val
+path: C:\Users\shale\OneDrive\Documents\GitHub\yolov9\dataset_overfit_test\data.yaml
+nc: 3
+names: ['bus', 'car', 'truck']
