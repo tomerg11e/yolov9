@@ -221,3 +221,6 @@ videos
 
 #models
 checkpoints
+
+#outputs
+runs
