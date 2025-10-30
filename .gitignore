@@ -224,3 +224,4 @@ checkpoints
 
 #outputs
 runs
+wandb
