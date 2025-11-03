@@ -29,7 +29,6 @@ def run_converted_inference():
     }
     detect.run(**params)
 
-
 def run_overfit():
     import train_dual
 
@@ -44,16 +43,16 @@ def run_overfit():
         "name": "overfit_yolov9-s",
         "hyp": "hyp.scratch-high.yaml",
         "min_items": 0,
-        "epochs": 1000,
+        "epochs": 10,
         "close_mosaic": 0,
         "augment": False,
         "cache": False,
         "patience": 100,
         "entity": "tomerg11e",
-        "bbox_interval": 10,
+        "bbox_interval": 100,
+        "optimizer": "AdamW",
     }
     train_dual.run(**params)
-
 
 def run_training():
     import train_dual
@@ -78,7 +77,8 @@ def run_training():
 def main():
     # run_inference()
     # run_converted_inference()
-    # run_training()
+    # run_training()    
+    # run_overfit()
     run_overfit()
     pass
 
